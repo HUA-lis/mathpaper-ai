@@ -1,0 +1,24 @@
+def average(numbers):
+    if not numbers:
+        raise ValueError("数字列表不能为空")
+
+    return sum(numbers) / len(numbers)
+
+
+def main():
+    print("=== MathPaper AI 数学小工具 ===")
+
+    user_input = input("请输入数字，用空格分隔：")
+
+    try:
+        numbers = [float(x) for x in user_input.split()]
+        result = average(numbers)
+
+        print(f"平均值：{result}")
+
+    except ValueError:
+        print("输入有误，请输入有效的数字。")
+
+
+if __name__ == "__main__":
+    main()
