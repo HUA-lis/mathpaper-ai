@@ -6,7 +6,7 @@ def average(numbers):
 
 
 def main():
-    print("=== MathPaper AI 数学小工具 ===")
+    print("=== MathPaper AI 数学助手 ===")
 
     user_input = input("请输入数字，用空格分隔：")
 
