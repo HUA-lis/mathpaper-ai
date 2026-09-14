@@ -1,5 +1,4 @@
-from math_tools import average
-
+from math_tools import average,maximum
 
 def main():
     print("=== MathPaper AI 数学助手 ===")
@@ -9,6 +8,8 @@ def main():
     try:
         numbers = [float(x) for x in user_input.split()]
         result = average(numbers)
+        max_result = maximum(numbers)
+        print(f"最大值：{max_result}")
 
         print(f"平均值：{result}")
 

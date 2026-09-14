@@ -3,3 +3,6 @@ def average(numbers):
         raise ValueError("数字列表不能为空")
 
     return sum(numbers) / len(numbers)
+
+def maximum(numbers):
+    return max(numbers)
